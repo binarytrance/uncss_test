@@ -1,0 +1,183 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+@font-face{
+	font-family:fagonbold;
+	/*src:url(fonts/ufonts.com_fagonoboldtf-opentype.otf);*/
+	src: url('fonts/FagoNoBoldTF.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/FagoNoBoldTF.woff') format('woff'), url('fonts/FagoNoBoldTF.ttf')  
+	format('truetype'), url('fonts/FagoNoBoldTF.svg#fagonbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family:NexaBold;
+	/*src:url(fonts/NexaBold.otf);*/
+	src: url('fonts/NexaBold.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/NexaBold.woff') format('woff'), url('fonts/NexaBold.ttf')  
+	format('truetype'), url('fonts/NexaBold.svg#NexaBold') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:HelvLight;
+	/*src:url(fonts/HelveticaNeueLTStd-Lt.otf);*/
+	src: url('fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/HelveticaNeueLTStd-Lt.woff') format('woff'), url('fonts/HelveticaNeueLTStd-Lt.ttf')  
+	format('truetype'), url('fonts/HelveticaNeueLTStd-Lt.svg#HelvLight') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family: sourceSansLight;
+	/*src:url(fonts/SourceSansPro-Semibold.otf);*/
+	src: url('fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/SourceSansPro-Light.woff') format('woff'), url('fonts/SourceSansPro-Light.ttf')  
+	format('truetype'), url('fonts/SourceSansPro-Light.svg#sourceSansLight') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:SourceSansBold;
+	src: url('fonts/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/SourceSansPro-Bold.woff') format('woff'), url('fonts/SourceSansPro-Bold.ttf')  
+	format('truetype'), url('fonts/SourceSansPro-Bold.svg#SourceSansBold') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:SourceSansBolder;
+	src: url('fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/SourceSansPro-Bold.woff') format('woff'), url('fonts/SourceSansPro-Bold.ttf')  
+	format('truetype'), url('fonts/SourceSansPro-Bold.svg#SourceSansBolder') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:SourceSansLtIt;
+	src: url('fonts/SourceSansPro-ExtraLightIt.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/SourceSansPro-ExtraLightIt.woff') format('woff'), url('fonts/SourceSansPro-ExtraLightIt.ttf')  
+	format('truetype'), url('fonts/SourceSansPro-ExtraLightIt.svg#SourceSansBolder') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: AvenirLTStd-Roman;
+    src: url(fonts/AvenirLTStd-Roman.otf);
+}
+html{
+	width: 100%;
+}
+/*.links_right li:nth-child(2){
+	background-color: transparent !important;
+}*/
+/*.infoCont{
+	position: absolute;
+	    left: 28%;
+    transform: translate(-15%, 0);
+    bottom: -80px;
+}*/
+/* Base for label styling */
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after {
+  content: '✔';
+  position: absolute;
+  top: 3px; left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #deb887;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+/* accessibility */
+/*[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}*/
+
+/*  tablecss */
+/* start of css for table */
+/*table, th, td {
+border-collapse: collapse;
+    border: 1px solid black;
+}*/
+/*end of css for table */
+/*        .feature-icon-mdl-list {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+}*/
+
+/*.rivalList{
+        font-weight: bold;
+    }
+*/
+
+@font-face {
+    font-family: proximanovalight;
+    src: url(fonts/proximanovalight.ttf);
+}
+@font-face {
+    font-family: Avenir-Next-LT-Pro-Demi;
+    src: url(fonts/Avenir-Next-LT-Pro-Demi.ttf);
+}
+/* start of css for table */
+/*table, th, td {
+border-collapse: collapse;
+    border: 1px solid black;
+}*/
+/*end of css for table */
+/*#table_mng h1 {
+	margin-top: 40px;
+	margin: auto;
+	display: block;
+}*/
+
+
+@media(max-width: 920px) {
+    
+    
+/*table, th, td {
+border-collapse: collapse;
+    border: 1px solid black;
+}*/
+
+
+}
+@media(max-width: 480px) {
+	/*table, th, td {
+	border-collapse: collapse;
+	    border: 1px solid black;
+	}*/
+}
